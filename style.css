@@ -1,0 +1,61 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    direction: rtl;
+}
+
+.container {
+    display: flex;
+    width: 80%; /* يمكنك تعديل العرض حسب الحاجة */
+    max-width: 960px; /* حد أقصى للعرض */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* لمنع تجاوز العناصر للحواف الدائرية */
+}
+
+.left-section {
+    flex: 1; /* يأخذ ثلث المساحة المتاحة */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+}
+
+.logo {
+    width: 150px; /* يمكنك تعديل حجم الشعار */
+    margin-bottom: 20px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+.right-section {
+    flex: 1; /* يأخذ ثلثي المساحة المتاحة */
+    overflow: hidden; /* لإخفاء أي جزء زائد من الصورة */
+}
+
+.screenshot {
+    width: 100%;
+    height: auto;
+    display: block; /* لإزالة أي مساحة إضافية أسفل الصورة */
+}
